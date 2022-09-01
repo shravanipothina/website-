@@ -3,12 +3,17 @@
     <head>
         <title>Webpage Sample</title>
         <style>
+            div{
+                border: 5px solid black;
+            }
             body{
                 text-align:center;
                 border:black;
+                background-image: url(images/bg.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
                 
-                background-color: hsla(147, 64%, 71%, 0.365);
-                border: navy;
+                margin-top: 50px;
                 padding: 15px 40px;
             }
             .button{
@@ -32,19 +37,20 @@
         
     </head>
     <body>
-        <img src="https://cdn2.vectorstock.com/i/1000x1000/54/31/pc-with-login-form-page-on-screen-vector-28695431.jpg" alt="login details" width="500" height="350" align="right" >
-        <h1>Member Login</h1>
-        <form class="form">
-            <input type="text" placeholder="name"><br><br>
-            <input type="password" placeholder="password"><br><br>
-        </form><br>
-        <br>
-        
-        <button class="button" type = "button" onclick =
-            "alert('Successfully logged in')">
-            Login
-        </button>
-        <p>Forgot Username/password<br><br>
-            <a href="#">Create an account</a></p>
+        <img src="images/login.jpg" alt="login details" width="500" height="350" align="right" >
+        <div>
+            <h1>Member Login</h1>
+            <form class="form">
+                <input type="text" placeholder="name"><br><br>
+                <input type="password" placeholder="password"><br><br>
+            </form><br>
+            <br>
+            <button class="button" type = "button" onclick =
+                "alert('Successfully logged in')">
+                Login
+            </button>
+            <p>Forgot Username/password<br><br>
+                <a href="#">Create an account</a></p>
+        </div>
     </body>
 </html>
